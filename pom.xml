@@ -10,7 +10,7 @@
 
     <groupId>ai.knorket</groupId>
     <artifactId>test</artifactId>
-    <version>0.5-SNAPSHOT</version>
+    <version>0.5</version>
     <packaging>trino-plugin</packaging>
 
     <licenses>
@@ -23,7 +23,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/WaseeA/test.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v0.5</tag>
     </scm>
 
     <distributionManagement>
