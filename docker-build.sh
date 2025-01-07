@@ -4,7 +4,7 @@ set -euo pipefail
 set -x
 
 if [ -f release.properties ]; then
-    VERSION=$(grep 'project.rel.ai.knorket\\:trino-nlp-embeddings=' release.properties | cut -d'=' -f2)
+    VERSION=$(grep 'project.rel.ai.knorket\\:test=' release.properties | cut -d'=' -f2)
 else
     VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
 fi
