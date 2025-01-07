@@ -58,6 +58,15 @@ jobs:
       - name: Prepare release
         run: ./mvnw -B release:prepare
 
+      - name: Verify release.properties
+        run: |
+          if [ ! -f release.properties ]; then
+            echo "release.properties file not found!"
+            exit 1
+          else
+            cat release.properties
+          fi
+
       - name: Build and push Docker image
         run: |
           ./docker-build.sh
