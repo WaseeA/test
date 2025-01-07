@@ -39,6 +39,12 @@ jobs:
           git config user.name "${{ github.event.head_commit.committer.name }}"
           git config user.email "${{ github.event.head_commit.committer.email }}"
 
+      - name: Clean untracked files
+        run: git clean -fdx
+
+      - name: Check git status
+        run: git status
+        
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
