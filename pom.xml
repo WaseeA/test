@@ -51,7 +51,7 @@
         <dep.trino.version>436</dep.trino.version>
         <dep.airlift.version>239</dep.airlift.version>
         <dep.joda.version>2.12.6</dep.joda.version>
-        <dep.errorprone.version>2.24.1</dep.errorprone.version>
+        <dep.errorprone.version>2.36.0</dep.errorprone.version>
 
         <air.javadoc.lint>-missing</air.javadoc.lint>
         <project.scm.id>github</project.scm.id>
