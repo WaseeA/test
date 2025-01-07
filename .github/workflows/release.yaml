@@ -19,9 +19,6 @@ jobs:
       - name: Set execute permission for mvnw
         run: chmod +x ./mvnw
 
-      - name: Set execute permissions for Maven wrapper
-        run: chmod +x ./mvnw
-
       - name: Set up the JDK
         uses: actions/setup-java@v4
         with:
